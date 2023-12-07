@@ -1,3 +1,4 @@
+# Einleitung
 Nachfolgend eine Samlung an Aufgaben. Wenn es sich um Code handelt werden die Punkte mit # preifixed in (...) je zeile angegeben.
   
 ## Aufgabe 1
@@ -75,5 +76,20 @@ Erwartet sind 4 punkte:
   * Distribution stellt software über dem Kernal zur Nutzung des Kernels bereit -> Graphick -> einfachere Programmaufrufe -> ...
 * 
 
+## Aufgabe 5
+Nenen und geben sie ein Verwendungsbeispiel für zwei befehle an, welche zum Überprüfen von Netzwerkverbindungen genutzt werden können. (2 oder 4 Punkte)  
+`ping 192.168.0.2`  
+`iperf3 -c 192.168.0.2`  
+`tracepath 192.168.0.2`
 
+## Aufgabe 6
+Da Herr de Montmollin gerne mit Markdown files arbeitet muss er diese reglmäsig in pdf umwandeln. 
+Hierzu verwendet Herr de Montmollin momentan den folgenden befehl: `pandoc --from=gfm --to=pdf -o test.pdf [file.md]`.  
+Die länge dieses Befehles findet Herr de Montmollin lästig. Deswegen wünst er nur ein Kürzel für den befehl angeben zu müssen. Geben sie seine angabe auf der CLI an um sein Ziel zu erreichen. Benennen sie die teile des Befehles.
+Der Herr wünscht dabei nur den in *[]* eingeschlossenen bereich noch zu verändern. 
+Zeigen sie auch die verwendung an einem Beispiel. (3 Punkte)  
+`alias m2p='pandoc --from=gfm --to=pdf -o test.pdf'`    # (1)  
+-----|------|    
+Befehl  Argument                                # (2)  
 
+`m2p Aufgaben.md` # (1)
