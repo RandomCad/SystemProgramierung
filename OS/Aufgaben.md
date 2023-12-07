@@ -55,4 +55,19 @@ Zur actifierung von ip forwarding muss in der Datei *sysctl.conf* die folgende Z
 	    echo 'ipforward=1' >> sysctl.conf                 # (1)
     fi
 
+## Aufgabe 3
+Geben sie 4 Betriebssystem unterschiedlicher Firmen an, welche in Virtuelbox verwendet werden können:
+1. Windows * (95, 98, XP, Vista, 7,8,10,11,...)
+2. Ubuntu
+3. Kubuntu
+4. Lubuntu
+5. Debian
+6. Weitere Linux Distreabutionen
+7. Mac OS X und alle forgänger Modelle
+8. FreeBSD
+Es sollte pro Betriebssystem maximal 1 Punkt geben. Halbe punkte wären auch möglich.  
+
+
+
+
 
