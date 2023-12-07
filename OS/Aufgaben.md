@@ -67,7 +67,13 @@ Geben sie 4 Betriebssystem unterschiedlicher Firmen an, welche in Virtuelbox ver
 8. FreeBSD
 Es sollte pro Betriebssystem maximal 1 Punkt geben. Halbe punkte wären auch möglich.  
 
-
+## Aufgabe 4
+Erklären sie die wichtigesten unterscheidungsmerkmale zwischen Linux und einer Linux Distribution.
+Erwartet sind 4 punkte:
+* Linux ist ein Kernel \<-\> Disros
+  * Kernal ist die basis eines Betriebsystemes -> stellt elementare funktionen bereit
+  * Distribution stellt software über dem Kernal zur Nutzung des Kernels bereit -> Graphick -> einfachere Programmaufrufe -> ...
+* 
 
 
 
