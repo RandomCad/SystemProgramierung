@@ -42,3 +42,17 @@ Stellen sie sicher, dass das soeben geschriebene script auch mehrfach ausgeführ
       mv $Folder/$i $Folder/Datei$num   # (1)
       ((num++))                         # (1)
     done
+
+## Aufgabe 2
+Zur actifierung von ip forwarding muss in der Datei *sysctl.conf* die folgende Zeile stehen: 
+`ipforward=1`. Diese Zeile kann entwede in der Datei mit `# ipforward=1` auskommentiert sein, garnicht angegeben sein oder mit `ipforward=0` angegeben sein. Schreiben sie ein Programm, welches die Konfiguration fornimmt und dabei die Datei nicht unnötig verlängert. Beachten sie auch, das weitere Konfigurationen durch `#` in der Datei auskommentiert sein könnten.
+
+    if grep -q '#ipforward=.' sysctl.conf ; then        # (1)
+      sed -i 's/#ipforward=./ipforward=1/' sysctl.conf  # (1)
+    elif grep -q 'ipforward=.' sysctl.conf ;then        # (1)
+      sed -i 's/ipforward=./ipforward=1/' sysctl.conf   # (1)
+    else
+	    echo 'ipforward=1' >> sysctl.conf                 # (1)
+    fi
+
+
