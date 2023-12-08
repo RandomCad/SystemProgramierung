@@ -45,7 +45,7 @@ Stellen sie sicher, dass das soeben geschriebene script auch mehrfach ausgeführ
     done
 
 ## Aufgabe 2
-Zur actifierung von ip forwarding muss in der Datei *sysctl.conf* die folgende Zeile stehen: 
+Zur Aktivierung von ip forwarding muss in der Datei *sysctl.conf* die folgende Zeile stehen: 
 `ipforward=1`. Diese Zeile kann entwede in der Datei mit `# ipforward=1` auskommentiert sein, garnicht angegeben sein oder mit `ipforward=0` angegeben sein. Schreiben sie ein Programm, welches die Konfiguration fornimmt und dabei die Datei nicht unnötig verlängert. Beachten sie auch, das weitere Konfigurationen durch `#` in der Datei auskommentiert sein könnten.
 
     if grep -q '#ipforward=.' sysctl.conf ; then        # (1)
@@ -57,7 +57,7 @@ Zur actifierung von ip forwarding muss in der Datei *sysctl.conf* die folgende Z
     fi
 
 ## Aufgabe 3
-Geben sie 4 Betriebssystem unterschiedlicher Firmen an, welche in Virtuelbox verwendet werden können:
+Geben sie 4 Betriebssystem unterschiedlicher Firmen an, welche in Virtualbox verwendet werden können:
 1. Windows * (95, 98, XP, Vista, 7,8,10,11,...)
 2. Ubuntu
 3. Kubuntu
@@ -83,9 +83,9 @@ Nenen und geben sie ein Verwendungsbeispiel für zwei befehle an, welche zum Üb
 `tracepath 192.168.0.2`
 
 ## Aufgabe 6
-Da Herr de Montmollin gerne mit Markdown files arbeitet muss er diese reglmäsig in pdf umwandeln. 
+Da Herr de Montmollin gerne mit Markdown files arbeitet muss er diese reglmäßig in pdf umwandeln. 
 Hierzu verwendet Herr de Montmollin momentan den folgenden befehl: `pandoc --from=gfm --to=pdf -o test.pdf [file.md]`.  
-Die länge dieses Befehles findet Herr de Montmollin lästig. Deswegen wünst er nur ein Kürzel für den befehl angeben zu müssen. Geben sie seine angabe auf der CLI an um sein Ziel zu erreichen. Benennen sie die teile des Befehles.
+Die länge dieses Befehles findet Herr de Montmollin lästig. Deswegen wünscht er nur ein Kürzel für den befehl angeben zu müssen. Geben sie seine angabe auf der CLI an um sein Ziel zu erreichen. Benennen sie die teile des Befehles.
 Der Herr wünscht dabei nur den in *[]* eingeschlossenen bereich noch zu verändern. 
 Zeigen sie auch die verwendung an einem Beispiel. (3 Punkte)  
 `alias m2p='pandoc --from=gfm --to=pdf -o test.pdf'`    # (1)  
@@ -96,7 +96,7 @@ Befehl  Argument                                # (2)
 
 ## Aufgaben 7
 ### Teil a
-Geben sie 6 unterschidliche Partitionsformate an: (3)
+Geben sie 6 unterschiedliche Partitionsformate an: (3)
 * Ext 4/3/2
 * NTFS
 * Fat 16/32/64
@@ -143,3 +143,11 @@ Geben sie mit den Nachkommenden informationen den Befehl zu mounten der NTFS Par
     
   `sudo mount -t ntsf /dev/nvme0n1p7 /media/test/test
     
+## Aufgabe 8
+Nenen 4 wege konfigurationsdateien auf einen neuen unkofigurierten Linux zu übertragen:
+* git
+* sftp
+* USb-Stick
+* Flashdirive
+* Download von einer Webseite
+
